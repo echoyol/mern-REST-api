@@ -55,7 +55,7 @@ const deleteGoal = asyncHandler(async (req, res) => {
   }
   const deleteGoal = await Goal.deleteOne({ _id: req.params.id })
 
-  res.status(200).json(deleteGoal)
+  res.status(200).json({ message: `Delete goal ${req.params.id}` })
 })
 
 module.exports = {
