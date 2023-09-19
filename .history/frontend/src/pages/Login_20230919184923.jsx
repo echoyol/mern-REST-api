@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import { FaUser } from 'react-icons/fa'
+import { FaSignInAlt } from 'react-icons/fa'
 
-function Register() {
+function Login() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,7 +26,7 @@ function Register() {
     <>
       <section className='heading'>
         <h1>
-          <FaUser /> Register
+          <FaSignInAlt /> Register
         </h1>
         <p>Please create an account</p>
       </section>
