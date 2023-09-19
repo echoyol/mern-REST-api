@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className='container'>
+        <div className='countainer'>
           <Routes>
             <Route
               path='/'
