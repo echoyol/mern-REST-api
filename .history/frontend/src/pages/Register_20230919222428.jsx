@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispach } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { FaUser } from 'react-icons/fa'
@@ -17,7 +17,7 @@ function Register() {
   const { name, email, password, password2 } = formData
 
   const navigate = useNavigate()
-  const dispatch = useDispatch()
+  const dispatch = useDispach()
 
   const { user, isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.auth
@@ -48,14 +48,12 @@ function Register() {
     } else {
       const userDate = { name, email, password }
 
-      dispatch(register(userDate))
+      dispatch(register)
     }
   }
-
   if (isLoading) {
     return <Spinner />
   }
-
   return (
     <>
       <section className='heading'>

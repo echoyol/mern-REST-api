@@ -48,7 +48,7 @@ function Register() {
     } else {
       const userDate = { name, email, password }
 
-      dispatch(register(userDate))
+      dispatch(register)
     }
   }
 
